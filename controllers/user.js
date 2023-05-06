@@ -23,7 +23,7 @@ export const login = async (req, res) => {
     next(error);
   }
 };
-export const register = async (req, res) => {
+export const register = async (req, res,next) => {
   const { name, email, password } = req.body;
   try {
     let user = await User.findOne({ email });
