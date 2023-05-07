@@ -14,7 +14,7 @@ app.use(express.json());
 app.use(cookieParser())
 // CORS ALLOWS REQUEST FOR SPECIFIC DOMAIN {TODO} 
 app.use(cors({
-  origin:[process.env.FORTEND_URL],
+  origin:[process.env.FRONTEND_URL],
   methods:['GET','POST','PUT','DELETE'],
   // things like cookie frontend data nhi milega false set karne pe
   credentials:true,
